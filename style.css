@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow:hidden;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+#buttons {
+    background-color: #202327;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    box-shadow: 0 0 25px #0d0e0f;
+    transition: 1s;
+}
+
+#buttons {
+    animation: sizeZout 0.25s ease;
+}
+
+#buttons:hover {
+    animation: sizeZin 0.5s ease;
+    animation-fill-mode:forwards
+}
+
+#buttons:active {
+    animation: Activ 0.25s ease;
+    animation-fill-mode:forwards
+}
+
+@keyframes sizeZin {
+    0%{
+        transform: scale(1);
+        background-color: #202327;
+        box-shadow: 0 0 25px #0d0e0f;
+    }
+    100%{
+        transform: scale(1.15);
+        background-color: #00aeff;
+        box-shadow: 0 0 45px #004261;
+    }
+}
+
+@keyframes sizeZout {
+    0%{
+        transform: scale(1.15);
+        background-color: #00aeff;
+        box-shadow: 0 0 45px #004261;
+    }
+    100%{
+        transform: scale(1);
+        background-color: #202327;
+        box-shadow: 0 0 25px #0d0e0f;
+    }
+}
+
+@keyframes Activ {
+    0%{
+        transform: scale(1.15);
+        background-color: #00aeff;
+        box-shadow: 0 0 45px #004261;
+    }
+    50%{
+        transform: scale(1.05);
+        background-color: #0076ad;
+        box-shadow: 0 0 35pxrgb(0, 52, 77)1;
+    }
+    100%{
+        transform: scale(1.15);
+        background-color: #00aeff;
+        box-shadow: 0 0 45px #004261;
+    }
+}
+
+.cubs {
+    position: absolute;
+    background-color: #202327;
+    left: -370px;
+    top: 35px;
+    height: 75px;
+    width: 350px;
+    display: inline-flex;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #0d0e0f;
+    transition: 1s;
+    animation: boxShadowOut 0.5s ease ;
+}
+
+#outMoney {
+    position: absolute;
+    font-size: 60px;
+    left: 10px;
+    top: 15x;
+    color: #00aeff;
+    transition: 0.5s;
+
+    user-select: none;
+}
+
+.cubs:hover {
+    animation: boxShadow 0.5s ease;
+    animation-fill-mode:forwards
+}
+
+@keyframes boxShadow {
+    0%{
+        box-shadow: 0 0 25px #0d0e0f;
+        transform: scale(1);
+    }
+    100%{
+        box-shadow: 0 0 25px #000000;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes boxShadowOut {
+    0%{
+        box-shadow: 0 0 25px #000000;
+        transform: scale(1.05);
+    }
+    100%{
+        box-shadow: 0 0 25px #0d0e0f;
+        transform: scale(1);
+    }
+}
+
+.buTwoMoney {
+    position: absolute;
+    background-color: #202327;
+    left: -370px;
+    top: 150px;
+    height: 45px;
+    width: 295px;
+    display: inline-flex;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #0d0e0f;
+    transition: 1s;
+    animation: boxShadow2ButtonOut 0.5s ease;
+}
+
+.buTwoMoney:hover {
+    animation: boxShadow2Button 0.5s ease;
+    animation-fill-mode:forwards
+}
+
+#monInClickBy{
+    position: absolute;
+    font-size: 30px;
+    left: 10px;
+    margin-top: 4px;
+    color: #ffffff;
+
+    user-select: none;
+}
+
+.moneyClickDiv {
+    position: absolute;
+    background-color: #202327;
+    left: -370px;
+    bottom: 35px;
+    height: 45px;
+    width: 295px;
+    display: inline-flex;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #0d0e0f;
+    transition: 1s;
+    animation: boxShadowOut 0.5s ease;
+}
+
+#moneyClick{
+    position: absolute;
+    font-size: 30px;
+    left: 10px;
+    margin-top: 4px;
+    color: #ffffff;
+
+    user-select: none;
+}
+
+@keyframes boxShadow2Button {
+    0%{
+        box-shadow: 0 0 25px #0d0e0f;
+        transform: scale(1);
+    }
+    100%{
+        box-shadow: 0 0 25px #000000;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes boxShadow2ButtonOut {
+    0%{
+        box-shadow: 0 0 25px #000000;
+        transform: scale(1.05);
+    }
+    100%{
+        box-shadow: 0 0 25px #0d0e0f;
+        transform: scale(1);
+    }
+}
+
+#buttonsEnemy {
+    background-color: #202327;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    margin-top: -50px;
+    margin-left: -50px;
+    box-shadow: 0 0 25px #0d0e0f;
+    transition: 1s;
+    display: none;
+    filter: blur(0px);
+}
+
+#buttonsEnemy {
+    animation: sizeZout2 0.25s ease;
+}
+
+#buttonsEnemy {
+    animation: sizeZin2 0.5s ease;
+    animation-fill-mode:forwards
+}
+
+#buttonsEnemy:active {
+    animation: Activ2 0.25s ease;
+    animation-fill-mode:forwards
+}
+
+@keyframes sizeZin2 {
+    0%{
+        transform: scale(1);
+        background-color: #202327;
+        box-shadow: 0 0 25px #0d0e0f;
+        filter: blur(5px);
+    }
+    100%{
+        transform: scale(1.15);
+        background-color: #ff0077;
+        box-shadow: 0 0 45px #610025;
+        filter: blur(0px);
+    }
+}
+
+@keyframes sizeZout2 {
+    0%{
+        transform: scale(1.15);
+        background-color: #ff0077;
+        box-shadow: 0 0 45px #610025;
+        filter: blur(0px);
+    }
+    100%{
+        transform: scale(1);
+        background-color: #202327;
+        box-shadow: 0 0 25px #0d0e0f;
+        filter: blur(30px);
+    }
+}
+
+@keyframes Activ2 {
+    0%{
+        transform: scale(1.15);
+        background-color: #ff0077;
+        box-shadow: 0 0 45px #610025;
+        filter: blur(0px);
+    }
+    50%{
+        transform: scale(1.05);
+        background-color: #ff0077;
+        box-shadow: 0 0 35pxrgb(0, 52, 77)1;
+        filter: blur(5px);
+    }
+    100%{
+        transform: scale(1.15);
+        background-color: #ff0077;
+        box-shadow: 0 0 45px #610025;
+        filter: blur(0px);
+    }
+}
+
+@keyframes moneSize {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes moneSizeStop {
+    0%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.cubsEmeny {
+    position: absolute;
+    background-color: #202327;
+    right: -370px;
+    top: 35px;
+    height: 75px;
+    width: 350px;
+    display: inline-flex;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #0d0e0f;
+    transition: 1s;
+    animation: boxShadowOut 0.5s ease ;
+    animation-fill-mode:forwards
+}
+
+#outHpEnemy {
+    position: absolute;
+    font-size: 50px;
+    left: 15px;
+    top: 5px;
+    color: #ff0077;
+    transition: 0.5s;
+
+    user-select: none;
+}
+
+@keyframes hpBarEnemy {
+    0%{
+        right: -370px;
+    }
+    100%{
+        right: 30px;
+    }
+}
+
+@keyframes hpBarEnemyCloses {
+    0%{
+        right: 30px;
+    }
+    100%{
+        right: -370px;
+    }
+}
+
+@keyframes cubsIn {
+    0%{
+        left: -370px;
+    }
+    100%{
+        left: 30px;
+    }
+}
+
+@keyframes buTwoMoneyIn {
+    0%{
+        left: -370px;
+    }
+    100%{
+        left: 30px;
+    }
+}
+
+@keyframes moneyClickDivIn {
+    0%{
+        left: -370px;
+    }
+    100%{
+        left: 30px;
+    }
+}
+
+@keyframes buTwoMoneyOut {
+    0%{
+        left: 30px;
+    }
+    100%{
+        left: -370px;
+    }
+}
+
+@keyframes moneyClickDivOut {
+    0%{
+        left: 30px;
+    }
+    100%{
+        left: -370px;
+    }
+}
+
+.cubsUsetHpBox {
+    position: absolute;
+    background-color: #202327;
+    left: 420px;
+    top: -110px;
+    height: 75px;
+    width: 375px;
+    display: inline-flex;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #0d0e0f;
+    transition: 1s;
+    animation: boxShadowOut 0.5s ease ;
+}
+
+#outUserHpBox {
+    position: absolute;
+    font-size: 60px;
+    left: 10px;
+    top: 15x;
+    color: #00aeff;
+    transition: 0.5s;
+
+    user-select: none;
+}
+
+@keyframes UserHpIn {
+    0%{
+        top: -110px;
+    }
+    100%{
+        top: 35px;
+    }
+}
+
+@keyframes UserHpOut {
+    0%{
+        top: 35px;
+    }
+    100%{
+        top: -110px;
+    }
+}
+
+.shopEatOne {
+    position: absolute;
+    background-color: #202327;
+    left: 420px;
+    top: -220px;
+    height: 45px;
+    width: 295px;
+    display: inline-flex;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #0d0e0f;
+    transition: 1s;
+    animation: boxShadow2ButtonOut 0.5s ease;
+}
+
+#shopEatOneText {
+    position: absolute;
+    font-size: 30px;
+    left: 10px;
+    margin-top: 4px;
+    color: #ffffff;
+
+    user-select: none;
+}
+
+@keyframes shopEatOneIn {
+    0%{
+        top: -220px;
+    }
+    100%{
+        top: 150px;
+    }
+}
+
+@keyframes shopEatOneOut {
+    0%{
+        top: 150px;
+    }
+    100%{
+        top: -220px;
+    }
+}
+
+.damageBoxEnemy {
+    position: absolute;
+    background-color: #202327;
+    right: -370px;
+    top: 145px;
+    height: 75px;
+    width: 350px;
+    display: inline-flex;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #0d0e0f;
+    transition: 1s;
+    animation: boxShadowOut 0.5s ease ;
+    animation-fill-mode:forwards
+}
+
+#damageBoxEnemyText {
+    position: absolute;
+    font-size: 50px;
+    left: 15px;
+    top: 5px;
+    color: #ff0077;
+    transition: 0.5s;
+    
+    user-select: none;
+}
+
+@keyframes damageBoxEnemyIn {
+    0%{
+        right: -370px;
+    }
+    100%{
+        right: 30px;
+    }
+}
+
+@keyframes damageBoxEnemyOut {
+    0%{
+        right: 30px;
+    }
+    100%{
+        right: -370px;
+    }
+}
+
+.prompterText {
+    position: absolute;
+    font-size: 30px;
+    bottom: -100px;
+    margin-top: 4px;
+    color: #ffffff;
+    transition: 1s;
+    color: #00aeff;
+    right: 30px;
+
+    user-select: none;
+}
+
+@keyframes prompterTextIn {
+    0%{
+        bottom: -50px;
+    }
+    100%{
+        bottom: 30px;
+    }
+}
+
+@keyframes prompterTextOut {
+    0%{
+        bottom: 30px;
+    }
+    100%{
+        bottom: -50px;
+    }
+}
